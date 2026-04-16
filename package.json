@@ -1,0 +1,25 @@
+{
+  "name": "cyber-tracker",
+  "version": "1.0.0",
+  "description": "800-Day Purple Team Cybersecurity Learning Tracker",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-roadmap": "node scripts/generate-roadmap.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "framer-motion": "^11.3.21",
+    "recharts": "^2.12.7",
+    "jspdf": "^2.5.1",
+    "marked": "^13.0.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}
