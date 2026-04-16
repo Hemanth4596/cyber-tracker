@@ -1,0 +1,200 @@
+[
+  {
+    "id": "first-blood",
+    "name": "First Blood",
+    "icon": "🩸",
+    "description": "Completed your very first day",
+    "condition": "complete_day_1",
+    "conditionValue": 1,
+    "conditionType": "day_completed",
+    "glow": "#ef4444",
+    "rarity": "common"
+  },
+  {
+    "id": "week-warrior",
+    "name": "Week Warrior",
+    "icon": "🔥",
+    "description": "Maintained a 7-day streak",
+    "condition": "streak_7",
+    "conditionValue": 7,
+    "conditionType": "streak",
+    "glow": "#f59e0b",
+    "rarity": "common"
+  },
+  {
+    "id": "month-operator",
+    "name": "Month Operator",
+    "icon": "💪",
+    "description": "Maintained a 30-day streak",
+    "condition": "streak_30",
+    "conditionValue": 30,
+    "conditionType": "streak",
+    "glow": "#f87171",
+    "rarity": "rare"
+  },
+  {
+    "id": "century",
+    "name": "Century",
+    "icon": "🏅",
+    "description": "Completed 100 days",
+    "condition": "complete_day_100",
+    "conditionValue": 100,
+    "conditionType": "day_completed",
+    "glow": "#fbbf24",
+    "rarity": "rare"
+  },
+  {
+    "id": "pythonista",
+    "name": "Pythonista",
+    "icon": "🐍",
+    "description": "Completed Phase 1 Foundation",
+    "condition": "phase_complete",
+    "conditionValue": 1,
+    "conditionType": "phase_complete",
+    "glow": "#4ade80",
+    "rarity": "rare"
+  },
+  {
+    "id": "web-pwner",
+    "name": "Web Pwner",
+    "icon": "🕸️",
+    "description": "Completed all web exploitation labs",
+    "condition": "score_500",
+    "conditionValue": 500,
+    "conditionType": "score",
+    "glow": "#60a5fa",
+    "rarity": "common"
+  },
+  {
+    "id": "ad-slayer",
+    "name": "AD Slayer",
+    "icon": "🗡️",
+    "description": "50% through Phase 2 Offensive Core",
+    "condition": "day_191",
+    "conditionValue": 191,
+    "conditionType": "day_completed",
+    "glow": "#f87171",
+    "rarity": "rare"
+  },
+  {
+    "id": "iron-discipline",
+    "name": "Iron Discipline",
+    "icon": "🧱",
+    "description": "30 consecutive days with zero misses",
+    "condition": "streak_30_no_miss",
+    "conditionValue": 30,
+    "conditionType": "streak_no_miss",
+    "glow": "#94a3b8",
+    "rarity": "epic"
+  },
+  {
+    "id": "writer",
+    "name": "Writer",
+    "icon": "📝",
+    "description": "Submitted 10 daily reports",
+    "condition": "reports_10",
+    "conditionValue": 10,
+    "conditionType": "reports",
+    "glow": "#fb923c",
+    "rarity": "common"
+  },
+  {
+    "id": "networker",
+    "name": "Network Phantom",
+    "icon": "🌐",
+    "description": "Reached 1,000 total XP",
+    "condition": "score_1000",
+    "conditionValue": 1000,
+    "conditionType": "score",
+    "glow": "#00e5ff",
+    "rarity": "rare"
+  },
+  {
+    "id": "shell-master",
+    "name": "Shell Master",
+    "icon": "🐚",
+    "description": "200-day checkpoint reached",
+    "condition": "day_200",
+    "conditionValue": 200,
+    "conditionType": "day_completed",
+    "glow": "#4ade80",
+    "rarity": "epic"
+  },
+  {
+    "id": "green-square",
+    "name": "Green Square",
+    "icon": "🟩",
+    "description": "GitHub streak synced for 7 days",
+    "condition": "github_streak_7",
+    "conditionValue": 7,
+    "conditionType": "github_streak",
+    "glow": "#10b981",
+    "rarity": "rare"
+  },
+  {
+    "id": "focused",
+    "name": "Hyper Focused",
+    "icon": "🎯",
+    "description": "Completed 50 consecutive days",
+    "condition": "streak_50",
+    "conditionValue": 50,
+    "conditionType": "streak",
+    "glow": "#f472b6",
+    "rarity": "epic"
+  },
+  {
+    "id": "researcher",
+    "name": "Researcher",
+    "icon": "🔬",
+    "description": "Reached 5,000 total XP",
+    "condition": "score_5000",
+    "conditionValue": 5000,
+    "conditionType": "score",
+    "glow": "#c084fc",
+    "rarity": "epic"
+  },
+  {
+    "id": "half-way",
+    "name": "The Long Game",
+    "icon": "⚡",
+    "description": "Reached Day 400 — halfway through",
+    "condition": "day_400",
+    "conditionValue": 400,
+    "conditionType": "day_completed",
+    "glow": "#f59e0b",
+    "rarity": "legendary"
+  },
+  {
+    "id": "oscp-bound",
+    "name": "OSCP Bound",
+    "icon": "🏆",
+    "description": "Entered Phase 4 Advanced Tradecraft",
+    "condition": "phase_complete",
+    "conditionValue": 3,
+    "conditionType": "phase_complete",
+    "glow": "#fbbf24",
+    "rarity": "legendary"
+  },
+  {
+    "id": "purple-operator",
+    "name": "Purple Operator",
+    "icon": "🟣",
+    "description": "Completed both Phase 2 and Phase 3",
+    "condition": "phases_2_3_complete",
+    "conditionValue": 0,
+    "conditionType": "phases_complete",
+    "glow": "#a855f7",
+    "rarity": "legendary"
+  },
+  {
+    "id": "elite",
+    "name": "Elite",
+    "icon": "★",
+    "description": "Completed all 800 days",
+    "condition": "day_800",
+    "conditionValue": 800,
+    "conditionType": "day_completed",
+    "glow": "#00e5ff",
+    "rarity": "legendary"
+  }
+]

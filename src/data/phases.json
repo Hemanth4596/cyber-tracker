@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "code": "P1",
+    "title": "Foundation",
+    "subtitle": "Build the non-negotiable substrate",
+    "startDay": 1,
+    "endDay": 100,
+    "totalDays": 100,
+    "totalHours": 430,
+    "color": "#4ade80",
+    "dimColor": "#4ade8015",
+    "borderColor": "#4ade8033",
+    "topics": [
+      "Cybersecurity Fundamentals",
+      "Python for Offensive & Defensive Security",
+      "Assembly Language Programming",
+      "Foundations of Log Analysis",
+      "DVWA & JuiceShop Labs",
+      "Web Application Security Basics",
+      "Networking Deep-Dive",
+      "Linux & Windows OS Internals"
+    ],
+    "tools": ["Wireshark", "Python 3", "Kali Linux", "DVWA", "JuiceShop", "Splunk Free", "GDB", "Burp Suite Community"],
+    "certifications": [
+      { "name": "CompTIA Security+", "verdict": "PASS EARLY", "color": "#10b981" }
+    ],
+    "milestone": "Can write Python tooling, trace shellcode, and reproduce OWASP Top 10 — all documented on GitHub"
+  },
+  {
+    "id": 2,
+    "code": "P2",
+    "title": "Offensive Core",
+    "subtitle": "Learn to break things at a technical level",
+    "startDay": 101,
+    "endDay": 280,
+    "totalDays": 180,
+    "totalHours": 760,
+    "color": "#f87171",
+    "dimColor": "#f8717115",
+    "borderColor": "#f8717133",
+    "topics": [
+      "Active Directory Offensive + CADP",
+      "Linux & Windows Privilege Escalation",
+      "Windows Persistence Techniques",
+      "Offensive Windows & Web Security",
+      "Spear Phishing + OpSec",
+      "SQL Injection + XSS Labs",
+      "Pivoting & Tunneling",
+      "Initial Access & Adversary Simulation",
+      "Red Team Operations Fundamentals",
+      "Pentest Report Writing"
+    ],
+    "tools": ["BloodHound", "Impacket", "Responder", "PowerView", "Burp Suite Pro", "GoPhish", "Cobalt Strike / Havoc", "Mimikatz", "SQLMap"],
+    "certifications": [
+      { "name": "PNPT", "verdict": "DO IT", "color": "#10b981" },
+      { "name": "eJPT", "verdict": "OPTIONAL", "color": "#f59e0b" },
+      { "name": "CEH", "verdict": "SKIP", "color": "#ef4444" }
+    ],
+    "milestone": "Achieve Domain Admin in lab from zero foothold in under 2 hours. 10 HTB machines documented on GitHub"
+  },
+  {
+    "id": 3,
+    "code": "P3",
+    "title": "Defensive Mastery",
+    "subtitle": "Learn to hunt exactly what you built",
+    "startDay": 281,
+    "endDay": 400,
+    "totalDays": 120,
+    "totalHours": 500,
+    "color": "#60a5fa",
+    "dimColor": "#60a5fa15",
+    "borderColor": "#60a5fa33",
+    "topics": [
+      "Digital Forensics & Incident Investigation",
+      "Malware Analysis (Intro + Intermediate)",
+      "EDR Internals & Evasion",
+      "Purple Team Labs",
+      "Purple Team AD & Azure AD",
+      "SIEM Engineering (Splunk / Elastic)",
+      "Threat Hunting",
+      "Detection Engineering with Sigma"
+    ],
+    "tools": ["Splunk Enterprise", "Elastic Stack", "Volatility3", "YARA", "Ghidra", "ANY.RUN", "Velociraptor", "Sysmon", "ATT&CK Navigator"],
+    "certifications": [
+      { "name": "BTL1", "verdict": "DO IT", "color": "#10b981" },
+      { "name": "GCFE / GCFA", "verdict": "IF SPONSORED", "color": "#f59e0b" }
+    ],
+    "milestone": "20 Sigma rules submitted to SigmaHQ. Can identify injected shellcode in memory dumps"
+  },
+  {
+    "id": 4,
+    "code": "P4",
+    "title": "Advanced Tradecraft",
+    "subtitle": "From using tools to building them",
+    "startDay": 401,
+    "endDay": 580,
+    "totalDays": 180,
+    "totalHours": 760,
+    "color": "#fb923c",
+    "dimColor": "#fb923c15",
+    "borderColor": "#fb923c33",
+    "topics": [
+      "Advanced AV/EDR Evasion Engineering",
+      "Evasion Labs",
+      "Windows Kernel Exploitation",
+      "Linux Kernel Programming & Rootkits",
+      "Advanced C2 Development",
+      "Beacon Object Files (BOF) Development",
+      "Red Team Windows API",
+      "Offensive Development (Windows)",
+      "Offensive Agent Course",
+      "Offensive IAM Exploitation",
+      "Secure Code Review & White Box Testing",
+      "Red Team Infrastructure"
+    ],
+    "tools": ["Cobalt Strike (advanced)", "Havoc C2", "ScareCrow", "Donut", "WinDBG", "x64dbg", "Frida", "KrbRelayUp", "Pacu"],
+    "certifications": [
+      { "name": "OSCP", "verdict": "MANDATORY", "color": "#10b981" },
+      { "name": "CRTO", "verdict": "DO IT", "color": "#10b981" },
+      { "name": "CRTE", "verdict": "DO IT", "color": "#10b981" },
+      { "name": "OSED", "verdict": "OPTIONAL", "color": "#f59e0b" }
+    ],
+    "milestone": "Custom C2 implant published on GitHub. Complete EDR bypass chain documented"
+  },
+  {
+    "id": 5,
+    "code": "P5",
+    "title": "Specialization",
+    "subtitle": "Generalists get interviews. Specialists get offers.",
+    "startDay": 581,
+    "endDay": 700,
+    "totalDays": 120,
+    "totalHours": 500,
+    "color": "#c084fc",
+    "dimColor": "#c084fc15",
+    "borderColor": "#c084fc33",
+    "topics": [
+      "ICS/SCADA Cybersecurity",
+      "iOS & macOS Internals",
+      "Master in Prompt Engineering & AI Security",
+      "Offensive Security with AI",
+      "Red Team Adaptive Operations",
+      "Advanced Python Automation"
+    ],
+    "tools": ["Frida", "objection", "Ghidra + IDA Pro", "ScadaBR", "Radare2", "OpenOCD"],
+    "certifications": [
+      { "name": "OSEP", "verdict": "DO IT", "color": "#10b981" },
+      { "name": "GICSP", "verdict": "IF ICS PATH", "color": "#f59e0b" },
+      { "name": "BSCP", "verdict": "DO IT", "color": "#10b981" }
+    ],
+    "milestone": "First real vulnerability disclosed (CVE or bug bounty). Original research published"
+  },
+  {
+    "id": 6,
+    "code": "P6",
+    "title": "Elite Purple Team",
+    "subtitle": "Stop training. Start operating.",
+    "startDay": 701,
+    "endDay": 800,
+    "totalDays": 100,
+    "totalHours": 430,
+    "color": "#f472b6",
+    "dimColor": "#f472b615",
+    "borderColor": "#f472b633",
+    "topics": [
+      "Full Purple Team Engagements",
+      "Red Team Adaptive Operations",
+      "Professional Report Writing",
+      "Secure Code Review & Architecture",
+      "Cyber Security Architecture",
+      "Adversary Emulation (APT campaigns)",
+      "Threat Intelligence Production"
+    ],
+    "tools": ["VECTR", "ATT&CK + D3FEND", "Caldera", "OpenCTI", "MISP", "Full custom toolchain"],
+    "certifications": [
+      { "name": "CRTL", "verdict": "DO IT", "color": "#10b981" },
+      { "name": "CISSP", "verdict": "SITUATIONAL", "color": "#f59e0b" },
+      { "name": "OSEE", "verdict": "ELITE OPTIONAL", "color": "#c084fc" }
+    ],
+    "milestone": "2+ full purple team engagement reports in portfolio. Senior/Lead role offers received"
+  }
+]

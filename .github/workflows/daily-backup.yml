@@ -1,0 +1,32 @@
+name: Daily Study Tracker Commit
+
+on:
+  schedule:
+    - cron: '0 18 * * *'   # 6pm UTC = ~11:30pm IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  heartbeat:
+    name: Daily heartbeat commit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update last-study timestamp
+        run: |
+          mkdir -p .tracker
+          echo "Last study heartbeat: $(date -u '+%Y-%m-%d %H:%M UTC')" > .tracker/heartbeat.txt
+          echo "Day updated by GitHub Actions" >> .tracker/heartbeat.txt
+
+      - name: Commit heartbeat
+        run: |
+          git config --local user.name  "CyberTrack Bot"
+          git config --local user.email "tracker@cybertrack.local"
+          git add .tracker/heartbeat.txt
+          git diff --staged --quiet && echo "Nothing to commit" || \
+            git commit -m "tracker: heartbeat $(date -u '+%Y-%m-%d')"
+          git push

@@ -1,0 +1,111 @@
+.page { animation: fadeInUp 0.35s ease both; }
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.header { margin-bottom: 20px; }
+.title { font-family: var(--font-display); font-size: clamp(20px, 3vw, 26px); font-weight: 800; color: #fff; margin-bottom: 4px; }
+.title span { color: var(--accent); }
+.sub { font-size: 11px; color: var(--muted); letter-spacing: 1px; }
+
+.card { margin-bottom: 14px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rowInfo { flex: 1; }
+.rowTitle { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.rowDesc  { font-size: 11px; color: var(--muted); line-height: 1.6; }
+
+/* Toggle */
+.toggle {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  background: var(--surface3);
+  border: 1px solid var(--border2);
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+.toggleOn {
+  background: rgba(16,185,129,0.3);
+  border-color: var(--green);
+}
+.toggleKnob {
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--muted);
+  transition: transform 0.2s, background 0.2s;
+}
+.toggleOn .toggleKnob {
+  transform: translateX(20px);
+  background: var(--green);
+}
+
+/* Time row */
+.timeRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.fieldGroup { display: flex; flex-direction: column; gap: 5px; }
+
+.label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.select {
+  padding: 7px 10px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+.select:focus { border-color: rgba(0,229,255,0.5); }
+
+.notSupported {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--border2);
+}
+
+/* Score table */
+.scoreTable { display: flex; flex-direction: column; }
+.scoreRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+.scoreRow:last-child { border-bottom: none; }
+.scoreLabel { color: var(--muted); }
+.scoreVal   { font-weight: 700; font-size: 13px; }
+
+/* Danger */
+.dangerCard { border-color: rgba(239,68,68,0.2); }
+.dangerRow  { display: flex; align-items: center; justify-content: space-between; gap: 20px; }

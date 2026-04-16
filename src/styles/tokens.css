@@ -1,0 +1,88 @@
+:root {
+  /* ── Colors ── */
+  --bg: #07090e;
+  --surface: #0d0f17;
+  --surface2: #12141f;
+  --surface3: #181a28;
+  --surface4: #1e2035;
+
+  --border: #1e2035;
+  --border2: #252840;
+  --border3: #2e3155;
+
+  --text: #e2e4f0;
+  --text2: #b0b3cc;
+  --text3: #7a7d99;
+  --muted: #5a5d7a;
+  --muted2: #3a3d54;
+  --muted3: #25273a;
+
+  /* ── Brand ── */
+  --accent: #00e5ff;
+  --accent-dim: #00e5ff18;
+  --accent2: #7c3aed;
+  --accent2-dim: #7c3aed18;
+
+  /* ── Status ── */
+  --green: #10b981;
+  --green-dim: #10b98115;
+  --red: #ef4444;
+  --red-dim: #ef444415;
+  --orange: #f59e0b;
+  --orange-dim: #f59e0b15;
+  --yellow: #eab308;
+  --blue: #3b82f6;
+  --blue-dim: #3b82f615;
+
+  /* ── Phases ── */
+  --phase1: #4ade80;
+  --phase1-dim: #4ade8015;
+  --phase2: #f87171;
+  --phase2-dim: #f8717115;
+  --phase3: #60a5fa;
+  --phase3-dim: #60a5fa15;
+  --phase4: #fb923c;
+  --phase4-dim: #fb923c15;
+  --phase5: #c084fc;
+  --phase5-dim: #c084fc15;
+  --phase6: #f472b6;
+  --phase6-dim: #f472b615;
+
+  /* ── Typography ── */
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* ── Spacing ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* ── Radii ── */
+  --radius-sm: 3px;
+  --radius: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --glow: 0 0 20px rgba(0, 229, 255, 0.15);
+  --glow-md: 0 0 30px rgba(0, 229, 255, 0.2);
+  --glow-lg: 0 0 50px rgba(0, 229, 255, 0.3);
+
+  /* ── Transitions ── */
+  --transition-fast: 100ms ease;
+  --transition: 150ms ease;
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Sidebar ── */
+  --sidebar-width: 224px;
+  --topbar-height: 56px;
+}

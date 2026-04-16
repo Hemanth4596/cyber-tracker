@@ -1,0 +1,149 @@
+.page { animation: fadeInUp 0.35s ease both; }
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.header { margin-bottom: 20px; }
+.title { font-family: var(--font-display); font-size: clamp(20px, 3vw, 26px); font-weight: 800; color: #fff; margin-bottom: 4px; }
+.title span { color: var(--accent); }
+.sub { font-size: 11px; color: var(--muted); letter-spacing: 1px; }
+
+.timelineCard { padding: 20px; }
+
+/* Timeline layout */
+.timeline { display: flex; flex-direction: column; }
+
+.phaseRow {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 0;
+}
+
+/* Spine */
+.spineWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.spineDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+  transition: box-shadow 0.3s;
+}
+
+.checkMark { color: #000; font-size: 12px; font-weight: 800; }
+.phaseNum  { color: #000; font-size: 11px; font-weight: 800; }
+
+.spineLine {
+  width: 2px;
+  flex: 1;
+  min-height: 20px;
+  margin: 4px 0;
+  transition: background 0.5s;
+}
+
+/* Content */
+.phaseContent {
+  flex: 1;
+  padding-bottom: 28px;
+  min-width: 0;
+}
+
+.locked { opacity: 0.5; }
+
+.phaseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.phaseName {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.phaseRange { font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+.phasePct   { font-family: var(--font-display); font-size: 20px; font-weight: 800; flex-shrink: 0; }
+
+/* Progress bar */
+.phaseBarWrap {
+  height: 3px;
+  background: var(--surface3);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+.phaseBar {
+  height: 3px;
+  border-radius: 2px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 2px;
+}
+
+/* Status */
+.phaseStatus { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+.statusDone   { color: var(--green); }
+.statusActive { font-weight: 700; }
+.statusLocked { color: var(--muted2); }
+
+/* Topics */
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.topicPill {
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  border: 1px solid;
+  background: var(--surface2);
+}
+.topicMore { font-size: 9px; color: var(--muted2); padding: 2px 0; align-self: center; }
+
+/* Certs */
+.certRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.certLabel { font-size: 9px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; }
+.certBadge {
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  border: 1px solid;
+  font-weight: 600;
+}
+
+/* Milestone */
+.phaseMilestone {
+  font-size: 11px;
+  color: var(--text3);
+  line-height: 1.6;
+  padding: 8px 12px;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--border2);
+}
+.milestoneLabel { color: var(--muted); font-weight: 600; }

@@ -1,0 +1,225 @@
+.sidebar {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  width: var(--sidebar-width);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-shrink: 0;
+}
+
+/* Logo */
+.logo {
+  padding: 22px 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logoMark {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.logoMark span { color: var(--accent); }
+
+.logoSub {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+/* XP */
+.xpBlock {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.xpLabel {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 5px;
+}
+
+.xpVal {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.xpBarWrap {
+  background: var(--surface3);
+  border-radius: 2px;
+  height: 3px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.xpBar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 2px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: xpGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes xpGlow {
+  from { box-shadow: 0 0 4px rgba(0, 229, 255, 0.4); }
+  to   { box-shadow: 0 0 10px rgba(0, 229, 255, 0.8); }
+}
+
+.xpNext {
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.xpNext span { color: var(--accent); font-weight: 600; }
+
+/* Streak */
+.streakBox {
+  margin: 10px 16px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.streakFlame {
+  font-size: 20px;
+  animation: flicker 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+  0%   { transform: scaleY(1); }
+  50%  { transform: scaleY(1.08) scaleX(0.96); }
+  100% { transform: scaleY(0.95) scaleX(1.03); }
+}
+
+.streakNum {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--orange);
+  line-height: 1;
+}
+
+.streakLabel {
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.streakBest {
+  margin-left: auto;
+  text-align: right;
+}
+
+.streakBestNum {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  line-height: 1;
+}
+
+/* Rank badge */
+.rankBadge {
+  margin: 0 16px 8px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  background: rgba(0, 229, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: var(--radius-sm);
+}
+
+.rankDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+  flex-shrink: 0;
+}
+
+.rankLabel {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+/* Nav */
+.nav {
+  padding: 4px 10px;
+  flex: 1;
+}
+
+.navSection {
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted2);
+  padding: 12px 8px 5px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+  transition: all var(--transition);
+  border: 1px solid transparent;
+  margin-bottom: 1px;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background: var(--surface2);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.navItem.active {
+  background: var(--surface3);
+  color: var(--accent);
+  border-color: rgba(0, 229, 255, 0.2);
+}
+
+.navIcon {
+  font-size: 13px;
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted2);
+}

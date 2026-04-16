@@ -1,0 +1,58 @@
+[
+  {
+    "id": "study-4h",
+    "label": "Study 4h minimum",
+    "icon": "📚",
+    "description": "Complete at least 4 hours of focused study",
+    "points": 1,
+    "default": true
+  },
+  {
+    "id": "no-social",
+    "label": "No social media",
+    "icon": "🚫",
+    "description": "Zero social media during study blocks",
+    "points": 1,
+    "default": true
+  },
+  {
+    "id": "github-commit",
+    "label": "GitHub commit",
+    "icon": "🟩",
+    "description": "At least one meaningful GitHub commit today",
+    "points": 2,
+    "default": true
+  },
+  {
+    "id": "exercise",
+    "label": "Exercise",
+    "icon": "💪",
+    "description": "Any physical activity — gym, run, walk",
+    "points": 1,
+    "default": true
+  },
+  {
+    "id": "review-notes",
+    "label": "Review yesterday's notes",
+    "icon": "🔁",
+    "description": "Spend 5–10 minutes reviewing what you learned yesterday",
+    "points": 1,
+    "default": true
+  },
+  {
+    "id": "sleep-7h",
+    "label": "Sleep 7h+",
+    "icon": "😴",
+    "description": "You can't learn when you're running on fumes",
+    "points": 1,
+    "default": true
+  },
+  {
+    "id": "write-notes",
+    "label": "Write technical notes",
+    "icon": "✍️",
+    "description": "Document at least one thing you learned today in writing",
+    "points": 1,
+    "default": true
+  }
+]

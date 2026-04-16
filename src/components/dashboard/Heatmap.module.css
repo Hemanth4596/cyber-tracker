@@ -1,0 +1,67 @@
+.outer {
+  overflow-x: auto;
+}
+
+.grid {
+  display: flex;
+  gap: 3px;
+  min-width: max-content;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cell {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  background: var(--surface3);
+  transition: transform 0.1s ease;
+  cursor: default;
+  flex-shrink: 0;
+}
+
+.cell:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.done {
+  background: var(--green);
+  opacity: 0.85;
+}
+
+.missed {
+  background: var(--red);
+  opacity: 0.5;
+}
+
+.today {
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+  opacity: 1;
+}
+
+.future {
+  background: var(--surface3);
+  opacity: 0.4;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+.legendDots {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
