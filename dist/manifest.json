@@ -1,0 +1,26 @@
+{
+  "name": "CyberTrack — 800-Day Purple Team",
+  "short_name": "CyberTrack",
+  "description": "Track your 800-day cybersecurity learning journey",
+  "start_url": "/cyber-tracker/",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#00e5ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/cyber-tracker/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/cyber-tracker/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "screenshots": []
+}
